@@ -15,9 +15,9 @@ export const update = () => {
     process.exec('npm install mzmm-cli@latest -g', (err) => {
         spinner.stop()
         if(!err){
-            console.log(`✨${chalk.yellowBright('更新成功')}`)
+            console.log(`✨ ${chalk.yellowBright('更新成功')}`)
         }else {
-            console.log(`🚨${chalk.redBright('更新失败')}\n${err}`)
+            console.log(`🚨 ${chalk.redBright('更新失败')}\n${err}`)
         }
     })
 }
