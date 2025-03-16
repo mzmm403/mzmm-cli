@@ -3,6 +3,9 @@ import fs from "fs-extra"
 import { input,select } from "@inquirer/prompts"
 import { clone } from "../utils/clone"
 import { isOverwrite } from "../utils/overWrite"
+import { version,name } from "../../package.json"
+import { checkVersion } from "../utils/checkVersion"
+
 
 export interface TemplateInfo {
     // 模板名称
@@ -62,6 +65,8 @@ export async function create(projectName?: string) {
         }
     }
 
+    // 检测当前版本是否为最新
+    await checkVersion(name,version)
 
     const templateName = await select({
         message: "请选择模板📋️",
