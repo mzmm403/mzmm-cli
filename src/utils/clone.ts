@@ -2,7 +2,7 @@ import simpleGit,{SimpleGitOptions} from 'simple-git'
 import createLogger from "progress-estimator";
 import chalk from 'chalk'
 import log from './log'
-const figlet = require('figlet')
+// const figlet = require('figlet')
 
 
 // 初始化进度条
@@ -13,10 +13,10 @@ const logger = createLogger({
     }
 })
 
-const printerLogo = async () => {
-    const data = await figlet('mzmm-cli')
-    console.log(chalk.rgb(248, 203, 200).visible(data))
-};
+// const printerLogo = async () => {
+//     const data = await figlet('mzmm-cli')
+//     console.log(chalk.rgb(248, 203, 200).visible(data))
+// };
 
 const gitOptions: Partial<SimpleGitOptions> = {
     baseDir: process.cwd(),
@@ -32,7 +32,7 @@ export const clone = async (url:string, projectName: string, options: string[]) 
             estimate: 9000, // 预计耗时，单位毫秒
         })
 
-        printerLogo()
+        // printerLogo()
         console.log()
         console.log(chalk.blueBright(`==================================`))
         console.log(chalk.blueBright(`==== 欢迎使用 mzmm-cli 脚手架 ====`))
