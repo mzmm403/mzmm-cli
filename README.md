@@ -24,4 +24,6 @@ mzmm-cli --version
 mzmm-cli -v
 # 使用模板创建新项目
 mzmm-cli create <project-name>
+# 可以直接使用
+npx mzmm-cli create <project-name>
 ```
