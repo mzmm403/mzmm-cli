@@ -1,13 +1,22 @@
 {
   "name": "mzmm-cli",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "mzmm-cli 脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
-  "author": "",
+  "keywords": ["vite","TypeScript"],
+  "author": "mzmm403",
+  "bin": {
+    "mzmm-cli": "./bin/index.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@inquirer/prompts": "^7.4.0",
