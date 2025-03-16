@@ -21,7 +21,7 @@ npm install mzmm-cli -g
 ```bash
 # 查看版本信息
 mzmm-cli --version
-mzmm0cli -v
+mzmm-cli -v
 # 使用模板创建新项目
 mzmm-cli create <project-name>
 ```
