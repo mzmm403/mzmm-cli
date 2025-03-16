@@ -22,8 +22,13 @@ npm install mzmm-cli -g
 # 查看版本信息
 mzmm-cli --version
 mzmm-cli -v
+
+# 更新脚手架到最新版本
+mzmm-cli update
+
 # 使用模板创建新项目
 mzmm-cli create <project-name>
+
 # 可以直接使用
 npx mzmm-cli create <project-name>
 ```
